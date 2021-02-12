@@ -18,7 +18,7 @@ const NoteCell = ({ item, navigation, handleDelete }) => {
   const textToShow = item.text.length > 35 ? `${item.text.slice(0, 35)}...` : item.text;
 
   return (
-    <Swipeout right={swipeBtns} autoClose="true" backgroundColor="transparent">
+    <Swipeout right={swipeBtns} autoClose={true} backgroundColor="transparent">
       <TouchableOpacity style={styles.cell} onPress={() => navigation.navigate('EditNote', item)}>
         <Text style={styles.text}>{textToShow}</Text>
       </TouchableOpacity>
