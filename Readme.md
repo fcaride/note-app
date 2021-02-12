@@ -5,3 +5,11 @@ Instructions of installation
 yarn
 
 yarn ios
+
+## Installation
+
+```bash
+yarn
+
+yarn ios
+```
